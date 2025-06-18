@@ -4,24 +4,36 @@
   <meta charset="UTF-8">
   <title>Contact Us Form</title>
 </head>
-
-
 <body>
+
   <h1>Contact Us</h1>
+
   <form action="#" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <fieldset>
+      <legend>Personal Details</legend>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
 
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+    </fieldset>
 
-    <button type="submit">Send</button>
+    <fieldset>
+      <legend>Your Message</legend>
+
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here..." required></textarea><br><br>
+    </fieldset>
+
+    <button type="submit">Send Message</button>
   </form>
+
 </body>
 </html>
