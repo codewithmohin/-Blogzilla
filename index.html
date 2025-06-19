@@ -1,47 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Web3 Contact Us</title>
+  <title>Best Blog Basics</title>
+  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
 <body>
-
-  <h1>Contact Us (Web3 Enabled)</h1>
-
-  <form id="web3-contact-form">
-
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="wallet">Your Wallet Address:</label><br>
-    <input type="text" id="wallet" name="wallet" placeholder="0x..." readonly><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-
-    <button type="button" onclick="connectWallet()">Connect Wallet</button><br><br>
-
-    <button type="submit">Send via Web3</button>
-
-  </form>
-
-  <script>
-    async function connectWallet() {
-      if (window.ethereum) {
-        try {
-          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-          document.getElementById('wallet').value = accounts[0];
-        } catch (err) {
-          alert('Wallet connection failed');
-        }
-      } else {
-        alert('MetaMask not detected. Please install it.');
-      }
-    }
-  </script>
-
+  <header>
+    <h1>Best Blog Basics</h1>
+    <p class="subtitle">Learning CSS the easy way!</p>
+  </header>
+  <main>
+    <article class="post">
+      <h2>Welcome to My First Post</h2>
+      <p>This is a simple blog post to practice CSS. Styling makes web pages look great!</p>
+    </article>
+    <article class="post">
+      <h2>Why CSS is Important</h2>
+      <p>CSS lets you control colors, fonts, spacing, and layout, making your site attractive and easy to read.</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 Best Blog Basics</p>
+  </footer>
 </body>
 </html>
