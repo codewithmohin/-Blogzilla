@@ -1,29 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blogzilla Blog Basics</title>
-  <link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8">
+  <title>All HTML Elements Example</title>
 </head>
-
 <body>
-  <header>
-    <h1>Blogzilla Blog Basics</h1>
-    <p class="subtitle">Learning CSS the easy way!</p>
-  </header>
+
+   <h1>Main Heading (h1)</h1>
+  <h2>Sub Heading (h2)</h2>
+  <h3>Sub-sub Heading (h3)</h3>
+  <h4>h4 Heading</h4>
+  <h5>h5 Heading</h5>
+  <h6>Smallest Heading (h6)</h6>
+
+   <p>This is a paragraph of text.</p>
+
+   <br>
+  <hr>
+
+   <b>Bold Text</b><br>
+  <i>Italic Text</i><br>
+  <u>Underlined Text</u><br>
+  <strong>Strong Text</strong><br>
+  <em>Emphasized Text</em><br>
+  <mark>Marked Text</mark><br>
+  <small>Small Text</small><br>
+  <del>Deleted Text</del><br>
+  <ins>Inserted Text</ins><br>
+  <sub>Subscript</sub> and <sup>Superscript</sup>
+
+   <a href="https://www.example.com">Visit Example</a>
+
+   <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+   <h3>Unordered List:</h3>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <h3>Ordered List:</h3>
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+
+   <h3>Sample Table:</h3>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>30</td>
+    </tr>
+  </table>
+
+   <h3>Contact Form:</h3>
+  <form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+
+    <input type="submit" value="Send">
+  </form>
+
+   <h3>Input Types:</h3>
+  <input type="text" placeholder="Text"><br>
+  <input type="number" placeholder="Number"><br>
+  <input type="password" placeholder="Password"><br>
+  <input type="date"><br>
+  <input type="checkbox"> Accept Terms<br>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="color"><br>
+  <input type="file"><br>
+
+   <h3>Video and Audio:</h3>
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video><br>
+
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+   <header><h2>This is a header</h2></header>
+  <nav><a href="#">Home</a> | <a href="#">About</a></nav>
   <main>
-    <article class="post">
-      <h2>Welcome to My First Blogzilla Blog Post</h2>
-      <p>This is a simple blog post to practice CSS. Styling makes web pages look great!</p>
+    <section>
+      <h3>Section Title</h3>
+      <p>Section content...</p>
+    </section>
+    <article>
+      <h3>Article Title</h3>
+      <p>Article content...</p>
     </article>
-    <article class="post">
-      <h2>Why CSS is Important</h2>
-      <p>CSS lets you control colors, fonts, spacing, and layout, making your site attractive and easy to read.</p>
-    </article>
+    <aside>
+      <p>Sidebar content</p>
+    </aside>
   </main>
   <footer>
-    <p>&copy; 2025 Best Blog Blogzillagit</p>
+    <p>&copy; 2025 My Website</p>
   </footer>
+
 </body>
 </html>
