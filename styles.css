@@ -1,53 +1,85 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  margin: 0;
-  padding: 20px;
-}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-.blog-container {
-  background: #fff;
-  padding: 30px;
-  max-width: 700px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+    body {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
 
-h1 {
-  color: #2c3e50;
-}
+    .sidebar {
+      width: 250px;
+      background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem;
+    }
 
-.author {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 20px;
-}
+    .main {
+      flex-grow: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
 
-p {
-  line-height: 1.6;
-}
+    header {
+      height: 200px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 600;
+    }
 
-.blog-image {
-  width: 100%;
-  border-radius: 8px;
-  margin: 20px 0;
-}
+    .section {
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-.tag {
-  display: inline-block;
-  background: #3498db;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-right: 5px;
-}
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #999;
-  font-size: 13px;
-}
+    .card {
+      flex: 1 1 calc(33.333% - 1rem);
+      background: radial-gradient(circle, #ffffff, #f1f1f1);
+      padding: 1rem;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
